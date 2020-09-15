@@ -25,3 +25,29 @@ def key_for_min_value(names_nums)
   end
 
 end
+
+=begin
+
+def key_for_min_value(names_nums)
+  
+  if names_nums == {}
+    nil
+  end
+  
+  if names_nums != {}
+    
+    list = names_nums.collect{|name| name}
+    new_hash = {}
+    list.each{|element| new_hash[element[1]] = element[0]}
+    nums = new_hash.collect{|num, name| num}
+    
+    smallest = nums[0]
+    nums.each do |num|
+      smallest = num if num < smallest
+    end
+    
+    new_hash[smallest]
+  end
+  
+end
+=end
