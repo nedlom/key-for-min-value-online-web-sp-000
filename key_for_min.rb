@@ -92,10 +92,8 @@ require 'pry'
 
 
 def key_for_min_value(hash)
-  
-  x = hash.collect{|k,v| v}
-  small = x[0]
-  x.each{|y| small = y if y < small}
+  values = hash.collect{|k,v| v}
+  smallest = x[0]
+  values.each{|i| smallest = i if i < smallest}
   hash.key(small)
-  
 end
