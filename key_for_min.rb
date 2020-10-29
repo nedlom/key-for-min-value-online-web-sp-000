@@ -97,6 +97,4 @@ def key_for_min_value(hash)
     x << [k,v]
   end
   
-  
-  binding.pry
 end
