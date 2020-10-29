@@ -94,6 +94,7 @@ require 'pry'
 def key_for_min_value(hash)
   
   x = hash.collect{|k,v| v}
+  small = x[0]
   binding.pry
   #key(z)
   
