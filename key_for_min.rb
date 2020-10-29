@@ -92,5 +92,6 @@ require 'pry'
 
 
 def key_for_min_value(hash)
+  x = hash.values
   binding.pry
 end
