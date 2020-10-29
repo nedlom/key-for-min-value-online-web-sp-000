@@ -95,5 +95,5 @@ def key_for_min_value(hash)
   values = hash.collect{|k,v| v}
   smallest = values[0]
   values.each{|i| smallest = i if i < smallest}
-  hash.key(small)
+  hash.key(smallest)
 end
