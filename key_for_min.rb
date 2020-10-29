@@ -92,6 +92,11 @@ require 'pry'
 
 
 def key_for_min_value(hash)
+  x = []
+  hash.collect do |k,v|
+    x << [k,v]
+  end
+  
   x = hash.values
   binding.pry
 end
