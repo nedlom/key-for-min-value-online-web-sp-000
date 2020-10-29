@@ -96,7 +96,6 @@ def key_for_min_value(hash)
   x = hash.collect{|k,v| v}
   small = x[0]
   x.each{|y| small = y if y < small}
-  binding.pry
-  #key(z)
+  hash.key(small)
   
 end
